@@ -1,0 +1,8 @@
+{
+  "name": "administrar",
+  "app_id": "3ce90dbf",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

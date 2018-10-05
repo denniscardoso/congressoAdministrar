@@ -1,0 +1,65 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Perfil do Congressista</ion-title>
+    <ion-buttons end>
+        <button ion-button icon-only color="white" (click)="logOut()" side="right" >
+          <ion-icon name="log-out"></ion-icon>
+        </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+  <ion-card class="congressista" *ngFor="let c of congressista">
+    <ion-card-header id="header">
+      <ion-card-title>
+        <img id="userPic" src="{{c.qrCode}}" />
+        <ion-grid>
+          <ion-row>
+            <ion-col>{{c.nome}}</ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col class="insc"><span class="dados">Inscrição</span>{{c.inscricao}}</ion-col>
+            <ion-col class="freq"><span class="dados">Frequência</span>{{c.freq}}</ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-grid id="userDetails">
+        <ion-row>
+          <ion-col>
+            <span class="dados">CPF</span>
+            {{c.cpf}}
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <span class="dados">E-mail</span>
+            {{c.email}}
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <span class="dados">Lote</span>
+            {{c.lote}}
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-grid *ngFor="let c of congressista" id="presencaDetails">
+    <ion-row *ngFor="let p of c.presencas" class="{{p.cor}} even row">
+      <ion-col>
+        {{p.index}}
+      </ion-col>
+      <ion-col>
+        {{p.presenca}}
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+<button ion-button full color="secondary" (click)="openLogin()" large>Nova consulta</button>
+</ion-content>

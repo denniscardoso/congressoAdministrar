@@ -1,0 +1,84 @@
+page-congressista {
+  
+  .content{
+    background: #FFF!important;
+  }
+  .congressista{
+    -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  .card{
+    margin: 0;
+    width: 100%;
+    #header{
+      background-color: #424242;
+      margin: 0;
+      padding: 0;
+      .card-title{
+        white-space: normal;
+        font-family: KozGoPro-ExtraLight;
+        color: #fff;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        text-align: center!important;
+        #userPic{
+          margin: 10px 0;
+          width: 150px!important;
+          display: inline;
+        }
+        .grid{
+          padding: 0;
+          font-size: 23px;
+          .dados{
+            color: #000;
+            font-weight: bold;
+          }
+          .insc{
+            background-color: #848484;
+          }
+          .freq{
+            background-color: #A4A4A4;
+          }
+        }
+      }
+    }
+}
+  #presencaDetails{
+    padding: 0;
+    .row{
+      border-bottom: 2px solid #FFF;
+      height: 40px;
+      align-items: center;
+    }
+  }
+  #userDetails{
+    .row{
+      border-bottom: 1px solid #e2e2e2;
+    }
+  }
+  .dados{
+    display: block;
+    color: #FA5858;
+    font-size: 10px;
+  }
+
+  .even{
+    background-color: #e6ecff;
+  }
+  .odd{
+    background-color: #ebfafa;
+  }
+  .ok{
+    background-color: #e6ffe6;
+  }
+  .nOk{
+    background-color: #ff0000;
+  }
+
+  #btoConsultar{
+    position: absolute;
+    bottom: 0;
+  }
+
+}

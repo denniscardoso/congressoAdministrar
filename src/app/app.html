@@ -1,0 +1,22 @@
+<!-- ion-menu [content]="content">
+  <ion-content id="menu">
+<div class="logo">
+  <img src="assets/img/logoBranca.png" />
+</div>
+    <ion-list>
+      <button icon-left menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+        <ion-icon style="padding-top:10px" name="{{p.icon}}"></ion-icon>
+        {{p.title}}
+      </button>
+    </ion-list>
+
+    <button class="sair" icon-left menuClose ion-item (click)="logOut()">
+      <ion-icon style="padding-top:10px" name="log-out"></ion-icon>
+      Sair
+    </button>
+  </ion-content>
+
+</ion-menu -->
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

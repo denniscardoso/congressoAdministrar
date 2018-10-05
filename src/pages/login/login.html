@@ -1,0 +1,45 @@
+<ion-content id="home">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Dados do Congressista</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-grid>
+        <!-- ion-row>
+          <ion-col>
+              <ion-label color="primary" stacked>Inscrição</ion-label>
+              <ion-input type="number" placeholder="Número da inscrição" [(ngModel)]="congressista.inscricao"></ion-input>
+          </ion-col>
+        </ion-row -->
+        <ion-row>
+          <ion-col>
+              <ion-label color="primary" stacked>CPF</ion-label>
+              <ion-input type="number" placeholder="SOMENTE NÚMEROS" [(ngModel)]="congressista.cpf"></ion-input>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+              <button icon-left ion-button large full (click)="pesquisarCongressista()">
+                <ion-icon name="search"></ion-icon>
+                Pesquisar
+              </button>
+          </ion-col>
+          <ion-col>
+              <button icon-left ion-button large full (click)="leitor()">
+                  <ion-icon name="barcode"></ion-icon>
+                  Leitor
+              </button>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+              <button icon-left ion-button large full (click)="cancelar()">
+                  <ion-icon name="exit"></ion-icon>
+                  Cancelar
+              </button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

@@ -1,0 +1,65 @@
+page-programacao {
+
+  .content{
+    background: #FFF!important;
+  }
+
+.programacao{
+  .data{
+    color: orange;
+    font-weight: bold;
+    -webkit-flex-grow:0!important;
+    border-right: 1px solid #e2e2e2;
+    span{
+      display: block;
+      font-size: 23px;
+    }
+  }
+  .titulo{
+    padding-bottom: 25px;
+    div{
+      font-weight: bold;
+    }
+  }
+  .detalhes{
+    color: #a4a4a4;
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    .row{
+      margin:0;
+      padding: 0;
+      .col{
+        margin:0;
+        padding: 0;
+      }
+    }
+  }
+}
+  .card{
+    margin: 10px 0;
+    width: auto;
+  }
+  .content{
+    color: #09363C!important;
+    background: url("../assets/img/Home-Cong-Adm-2017.png");
+  }
+  .card-header{
+    background-color: #f2f2f2;
+    font-weight: bold;
+    font-size: 20px;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    text-align: center;
+    color: #09363C!important;
+  }
+  .programacao .card-content{
+    padding: 0!important;
+  }
+  .dados{
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #f1f1f1;
+    align-items: center;
+  }
+}

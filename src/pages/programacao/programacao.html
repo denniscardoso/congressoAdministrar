@@ -1,0 +1,42 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Programação</ion-title>
+
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+<div class="divLogo">
+  <img id="logo" src="assets/img/logo.png" />
+</div>
+<ion-card class="programacao" *ngFor="let p of programacao">
+  <ion-card-header [innerHTML]="p.data"></ion-card-header>
+  <ion-card-content>
+    <ion-grid>
+      <ion-card class="programacao" *ngFor="let pro of p.programacao">
+        <ion-card-content>
+          <ion-grid>
+            <ion-row>
+              <ion-col class="data" [innerHTML]="p.data"></ion-col>
+              <ion-col class="titulo">
+                <div [innerHTML]="pro.titulo"></div>
+                <ion-grid class="detalhes">
+                  <ion-row>
+                    <ion-col><ion-icon name="clock" color="lightRed"></ion-icon> {{pro.horario}}</ion-col>
+                    <ion-col><ion-icon name="pin" color="lightRed"></ion-icon> {{pro.local}}</ion-col>
+                  </ion-row>
+                </ion-grid>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card-content>
+      </ion-card>
+    </ion-grid>
+  </ion-card-content>
+</ion-card>
+
+</ion-content>
